@@ -1,0 +1,13 @@
+<h1>Recipe Manager</h1>
+<div>
+
+  <button *ngIf="!showAddRecipe" (click)="add();">
+    add
+  </button>
+</div>
+
+<div>
+    <app-heroes *ngIf="showHeroes"></app-heroes>
+    <app-config *ngIf="showAddRecipe"></app-config>
+</div>
+

@@ -1,0 +1,22 @@
+<h3>ADD A RECIPE</h3>
+<div>
+  <form #recipeObj>
+      <label>RECIPE name:</label>
+      <input name='recipe'  #recipe >
+      <label>INGRIDIENT 1:
+        </label>
+        <input name='ingredient1' #ingredient1>
+      <label>INGRIDIENT 2:
+        </label>
+        <input name='ingredient2' #ingredient2>
+      <label>INGRIDIENT 3:</label>
+        <input name='ingredient3' #ingredient3>
+      <label>INGRIDIENT 4:
+        </label>
+        <input name='ingredient4' #ingredient4>
+      </form>
+
+      <button (click)="addRecipe(recipeObj)">Save</button>
+      <button (click)="showConfigResponse()">Cancel</button>
+</div>
+
